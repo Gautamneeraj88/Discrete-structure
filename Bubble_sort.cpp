@@ -13,9 +13,17 @@ class Bubblesort{
     int i,j,n,number[10],temp; //here declaration of the variable and the array
 
     Bubblesort()                    //this is the constructor which is automaticaly call when the object of the class
-    {                               //is created
-        cout<<"How many number:";
-        cin>>n;
+   {
+       Start:cout<<"How many number:";
+        if(n>=10)
+        {
+            cin>>n;
+        }
+        else
+        {
+            cout<<"Enter in range 0 to 10."<<endl;
+        }
+        goto Start;
     }
 
     void input()                  //this is the member function in which take input for the array from the user
