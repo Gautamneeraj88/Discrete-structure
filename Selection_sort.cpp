@@ -17,16 +17,8 @@ class Selectionsort
  
     Selectionsort()                 //this is the constructor which is automaticaly call when the object of the class
     {
-       Start:cout<<"How many number:";
-        if(n>=10)
-        {
-            cin>>n;
-        }
-        else
-        {
-            cout<<"Enter in range 0 to 10."<<endl;
-        }
-        goto Start;
+      cout<<"How many number:";
+      cin>>n;
     }
 
     void input()                   //this is the member function in which take input for the array from the user
